@@ -2,7 +2,7 @@ from stable_baselines3 import PPO
 from env.robot_arm_env import RobotArmEnv
 import sys
 def train_model():
-    env = RobotArmEnv(use_gui=True)  # 可以选择使用 GUI
+    env = RobotArmEnv(use_gui=False)  # 可以选择使用 GUI
     model = PPO(
     "MlpPolicy", 
     env, 
